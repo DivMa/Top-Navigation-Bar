@@ -1,0 +1,17 @@
+<!--pages/classify/classify.wxml-->
+<view class="nav">
+  <view id="0" class="{{currentTab == 0?'select':'normal'}}" bindtap="switchNav">红色课堂</view>
+  <view id="1" class="{{currentTab == 1?'select':'normal'}}" bindtap="switchNav">党员之家</view>
+  
+</view>
+<view class='hr'></view>
+
+<swiper current="{{currentTab}}" style="height:{{winHeight}}px">
+<swiper-item>
+    <view>内容</view>
+  </swiper-item>
+  <swiper-item>
+    <view>我看内容</view>
+  </swiper-item>
+
+</swiper>
